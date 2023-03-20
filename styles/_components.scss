@@ -1,0 +1,84 @@
+.preview {
+  margin-top: 4rem;
+  text-align: $tx-align;
+  margin-bottom: $mb3;
+
+  .heading-preview {
+    color: $primary-color;
+    font-size: $fs-heading;
+    line-height: $lh-headings;
+    letter-spacing: $ls-headings;
+    margin-bottom: $mb2;
+  }
+
+  .text-preview {
+    color: $primary-gray;
+    font-weight: $fw-semi-bold;
+    padding: 0 0.6rem;
+  }
+}
+
+.ratings {
+  text-align: $tx-align;
+  margin-bottom: $mb4;
+
+  .rating-card {
+    padding: 1rem;
+    background-color: $text-color;
+    margin-bottom: $mb1;
+    border-radius: 0.5rem;
+  }
+
+  .card-icon-container {
+    justify-content: center;
+    margin-bottom: $mb1;
+  }
+
+  .rating-text {
+    color: $primary-color;
+    font-weight: $fw-bold;
+  }
+}
+
+.section-testimonials {
+  margin-bottom: 6rem;
+
+  & article {
+    background-color: $primary-color;
+    margin-bottom: $mb1;
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+  }
+
+  & .customer {
+    align-items: center;
+    margin-bottom: $mb1;
+  }
+
+  & .customer-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100rem;
+    margin-right: 1.5rem;
+  }
+
+  & .customer-name {
+    color: $text-color;
+    font-weight: $fw-bold;
+  }
+
+  & .verified-buyer {
+    color: $secondary-color;
+    font-weight: $fw-semi-bold;
+  }
+
+  & .customer-testimonial {
+    color: $text-color;
+    padding: 0.5rem;
+    font-weight: $fw-light;
+  }
+}
+
+.attribution {
+  text-align: center;
+}

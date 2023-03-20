@@ -1,0 +1,29 @@
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex() {
+  display: flex;
+}
+
+.flex-center {
+  @include flex-center();
+}
+
+.container {
+  max-width: $w-container;
+}
+
+.card {
+  @include flex();
+}
+
+.card-icon-container {
+  @include flex();
+}
+
+.customer {
+  @include flex();
+}

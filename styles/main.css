@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+main {
+  background-image: url("/images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 20rem;
+}
+
+.card {
+  display: flex;
+}
+
+.card-icon-container {
+  display: flex;
+}
+
+.customer {
+  display: flex;
+}
+
+.preview {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.preview .heading-preview {
+  color: rgb(80, 32, 80);
+  font-size: 3rem;
+  line-height: 0.8;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1.5rem;
+}
+.preview .text-preview {
+  color: rgb(147, 123, 146);
+  font-weight: 500;
+  padding: 0 0.6rem;
+}
+
+.ratings {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.ratings .rating-card {
+  padding: 1rem;
+  background-color: rgb(247, 242, 247);
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.ratings .card-icon-container {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.ratings .rating-text {
+  color: rgb(80, 32, 80);
+  font-weight: 700;
+}
+
+.section-testimonials {
+  margin-bottom: 6rem;
+}
+.section-testimonials article {
+  background-color: rgb(80, 32, 80);
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+}
+.section-testimonials .customer {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section-testimonials .customer-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100rem;
+  margin-right: 1.5rem;
+}
+.section-testimonials .customer-name {
+  color: rgb(247, 242, 247);
+  font-weight: 700;
+}
+.section-testimonials .verified-buyer {
+  color: rgb(238, 104, 164);
+  font-weight: 500;
+}
+.section-testimonials .customer-testimonial {
+  color: rgb(247, 242, 247);
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .container {
+    max-width: 62.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .preview {
+    margin: 0;
+    text-align: left;
+  }
+  .preview .heading-preview {
+    font-size: 4rem;
+  }
+  .preview .text-preview {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .ratings {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .rating-card {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+  }
+  .abs-1 {
+    top: 10%;
+    left: 0;
+  }
+  .abs-2 {
+    top: 35%;
+    left: 10%;
+  }
+  .abs-3 {
+    top: 60%;
+    left: 20%;
+  }
+  .ratings .card-icon-container {
+    margin-bottom: 0rem;
+    margin-right: 3rem;
+  }
+  .section-testimonials {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 18rem;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .section-testimonials article {
+    margin-bottom: 0;
+    position: absolute;
+    width: 20rem;
+  }
+  .section-testimonials .abs-cust-1 {
+    top: 0;
+    left: 0;
+  }
+  .section-testimonials .abs-cust-2 {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .section-testimonials .abs-cust-3 {
+    top: 10%;
+    right: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
